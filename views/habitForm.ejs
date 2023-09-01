@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add Habit</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <style>
+    .habit-form {
+      background-color: rgb(114, 179, 240);
+      width: max-content;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px black;
+      color: black;
+    }
+
+    .submit-form{
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      
+    }
+
+    .submit-form div input {
+      border: none;
+      box-shadow: 0px 1px 1px black;
+      overflow: hidden;
+      border-radius: 2px;
+    }
+
+    .submit-form button{
+      border-radius: 3px;
+      background-color: rgb(81, 81, 253);
+      color: white;
+      border: none;
+      overflow: hidden;
+      padding: 3px 0;
+    }
+
+    .submit-form button:hover{
+      background-color: white;
+      color: rgb(81, 81, 253);
+      }
+  </style>
+</head>
+
+<body>
+  <div class="habit-form">
+    <h4>Add Habit</h4>
+    <form action="/habits" method="post" class="submit-form">
+
+      <!-- Input field to enter the habit name -->
+      <div>
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter habit name" required>
+      </div>
+
+      <!-- Button to submit the form and add the habit -->
+      <button type="submit">Add Habit</button>
+    </form>
+  </div>
+</body>
+
+</html>
